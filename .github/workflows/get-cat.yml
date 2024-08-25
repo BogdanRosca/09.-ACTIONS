@@ -14,3 +14,5 @@ jobs:
         with:
           url: 'https://catfact.ninja/fact'
 
+      - name: 🖨️ Print cat fact
+        run: echo ${{ steps.get-cat.outputs.fact }}
