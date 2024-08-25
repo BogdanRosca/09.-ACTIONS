@@ -4,6 +4,9 @@ inputs:
   url: 
     description: The URL to request fact from
     requiered: true
+outputs:
+  fact:
+    description: A ramdom cat fact
 runs:
   using: 'node16'
   main: 'main.js'
