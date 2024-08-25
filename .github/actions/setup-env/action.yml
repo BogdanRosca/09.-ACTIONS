@@ -26,4 +26,4 @@ runs:
       shell: bash
       run: |
         npm ci
-        echo "cache-hit=${{ inputs.caching }}" >> $GITHUB.OUTPUT
+        echo "cache-hit=${{ inputs.caching }}" >> $GITHUB_OUTPUT
