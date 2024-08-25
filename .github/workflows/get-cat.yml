@@ -10,7 +10,7 @@ jobs:
 
       - name: 😺 Get cat fact
         id: get-cat
-        uses: BogdanRosca/09.ACTIONS@v1)
+        uses: bogdanrosca/10.cat-fact@v1)
         with:
           url: 'https://catfact.ninja/fact'
 
