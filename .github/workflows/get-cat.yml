@@ -1,0 +1,19 @@
+name: Get cat
+on: workflow_dispatch
+    
+jobs:
+  get-cat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📁 Get code
+        uses: actions/checkout@v3
+
+      - name: 💿 Setup environment
+        id: install-environment
+        uses: ./.github/actions/setup-env
+        with:
+          caching: 'false'
+
+      - name: 😺 Get cat
+        id: get-cat
+        uses: ./.github/actions/get-cat
