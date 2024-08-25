@@ -8,5 +8,5 @@ outputs:
   fact:
     description: A ramdom cat fact
 runs:
-  using: doker
+  using: docker
   image: 'Dockerfile'
