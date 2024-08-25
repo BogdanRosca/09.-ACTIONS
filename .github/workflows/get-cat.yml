@@ -28,4 +28,4 @@ jobs:
       - name: 🖨️ Print cat fact
         run: |
           echo ${{ steps.get-cat.outputs.fact }}
-          echo "😺 Cat fact: ${{ steps.get-cat.outputs.fact }}" >> $GITHUB_STEP_SUMMARY
+          echo "😺 Cat fact: ${{ steps.get-cat-python.outputs.fact }}" >> $GITHUB_STEP_SUMMARY
