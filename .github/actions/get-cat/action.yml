@@ -1,0 +1,5 @@
+name: Get cat fact
+description: Get a random cat using https://catfact.ninja/fact
+runs:
+  using: 'node16'
+  main: 'main.js'
