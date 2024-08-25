@@ -18,3 +18,14 @@ jobs:
         run: |
           echo ${{ steps.get-cat.outputs.fact }}
           echo "😺 Cat fact: ${{ steps.get-cat.outputs.fact }}" >> $GITHUB_STEP_SUMMARY
+
+      - name: 🐍😺 Get cat fact with Python
+        id: get-cat-python
+        uses: ./.github/actions/get-python-cat
+        with:
+          url: 'https://catfact.ninja/fact'
+
+      - name: 🖨️ Print cat fact
+        run: |
+          echo ${{ steps.get-cat.outputs.fact }}
+          echo "😺 Cat fact: ${{ steps.get-cat.outputs.fact }}" >> $GITHUB_STEP_SUMMARY

@@ -7,8 +7,6 @@ inputs:
 outputs:
   fact:
     description: A ramdom cat fact
-env:
-  URL: ${{ inputs.url }}
 runs:
-  using: 'node20'
-  main: 'main.js'
+  using: doker
+  image: 'Dockerfile'
