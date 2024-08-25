@@ -11,4 +11,6 @@ jobs:
       - name: 😺 Get cat fact
         id: get-cat
         uses: ./.github/actions/get-cat
+        with:
+          url: 'https://catfact.ninja/fact'
 

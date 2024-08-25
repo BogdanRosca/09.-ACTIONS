@@ -3,7 +3,6 @@ description: Get a random cat using https://catfact.ninja/fact
 inputs:
   url: 
     description: The URL to request fact from
-    value: https://catfact.ninja/fact
     requiered: true
 runs:
   using: 'node16'
