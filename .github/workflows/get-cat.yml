@@ -14,6 +14,7 @@ jobs:
         with:
           caching: 'false'
 
-      - name: 😺 Get cat
+      - name: 😺 Get cat fact
         id: get-cat
         uses: ./.github/actions/get-cat
+        
