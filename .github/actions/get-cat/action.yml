@@ -8,5 +8,5 @@ outputs:
   fact:
     description: A ramdom cat fact
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'main.js'
